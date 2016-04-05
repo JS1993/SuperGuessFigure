@@ -98,6 +98,7 @@
                         <outlet property="answerView" destination="Slp-vA-vk2" id="wcD-6h-FxN"/>
                         <outlet property="chooseView" destination="POA-7h-meh" id="ewh-dt-qUU"/>
                         <outlet property="iconButton" destination="LtU-Kf-q9N" id="pHy-oh-GfQ"/>
+                        <outlet property="nextButton" destination="a0m-rm-RzY" id="wmR-x4-mKt"/>
                         <outlet property="numLabel" destination="dyI-zz-EcW" id="RWQ-Ji-XcT"/>
                         <outlet property="tipLabel" destination="Q9a-Nw-P6J" id="AwB-N4-JBN"/>
                     </connections>
