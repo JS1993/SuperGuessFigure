@@ -436,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SuperGuessFigure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.SuperGuessFigure;
@@ -447,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SuperGuessFigure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.SuperGuessFigure;
@@ -519,6 +521,7 @@
 				CF3FCB8D1CB35ADB0056F6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF3FCB8E1CB35ADB0056F6F7 /* Build configuration list for PBXNativeTarget "SuperGuessFigureTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +530,7 @@
 				CF3FCB901CB35ADB0056F6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF3FCB911CB35ADB0056F6F7 /* Build configuration list for PBXNativeTarget "SuperGuessFigureUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +539,7 @@
 				CF3FCB931CB35ADB0056F6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

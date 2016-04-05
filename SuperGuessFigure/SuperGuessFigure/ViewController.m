@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *scoreButton;
 @property(strong,nonatomic)NSArray* question;
 @property(strong,nonatomic)UIButton* button;
+@property(nonatomic)CGRect rect;
 /**
  *  顶部索引标识
  */
@@ -53,6 +54,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+   self.rect=self.iconButton.frame;
     self.index=-1;
     [self nextQuestion:self.nextButton];
 }
@@ -73,7 +75,7 @@
         //缩小动画
         [UIView animateWithDuration:1.0f animations:^{
             self.button.alpha=0.0;
-            self.iconButton.frame=CGRectMake(84, 122, 152, 144);
+            self.iconButton.frame=_rect;
         }];
     }
 }
@@ -84,6 +86,8 @@
     //通关校验
     if(self.index==self.question.count) return;
     Questions* question=self.question[self.index];
+    //每次点击下一题时，都会打乱顺序
+    //[question randomOptions];
     //设置基本信息
     [self setUpBasicInfo:question];
     /**防止数组越界*/
