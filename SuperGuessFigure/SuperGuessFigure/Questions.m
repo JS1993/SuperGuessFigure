@@ -13,6 +13,7 @@
     self=[super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
+        [self randomOptions];
     }
     return self;
 }
@@ -30,5 +31,17 @@
 //重写description方法
 -(NSString *)description{
     return [NSString stringWithFormat:@"answer:%@ icon:%@ title:%@ options:%@",self.answer,self.icon,self.title,self.options];
+}
+//让options乱序
+-(void)randomOptions
+{
+    self.options=[self.options sortedArrayUsingComparator:^NSComparisonResult(NSString* obj1, NSString* obj2) {
+        int seed=arc4random_uniform(2);
+        if (seed) {
+            return [obj1 compare:obj2];
+        }else{
+            return [obj2 compare:obj1];
+        }
+     }];
 }
 @end

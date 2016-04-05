@@ -16,4 +16,5 @@
 -(instancetype)initWithDict:(NSDictionary*)dict;
 +(instancetype)questionWithDict:(NSDictionary*)dict;
 +(NSArray*)questions;
+-(void)randomOptions;
 @end
