@@ -16,6 +16,7 @@
 		CF3FCB711CB35ADB0056F6F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3FCB6F1CB35ADB0056F6F7 /* LaunchScreen.storyboard */; };
 		CF3FCB7C1CB35ADB0056F6F7 /* SuperGuessFigureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB7B1CB35ADB0056F6F7 /* SuperGuessFigureTests.m */; };
 		CF3FCB871CB35ADB0056F6F7 /* SuperGuessFigureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB861CB35ADB0056F6F7 /* SuperGuessFigureUITests.m */; };
+		CF3FCB951CB35BA40056F6F7 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF3FCB941CB35BA40056F6F7 /* questions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CF3FCB821CB35ADB0056F6F7 /* SuperGuessFigureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperGuessFigureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3FCB861CB35ADB0056F6F7 /* SuperGuessFigureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperGuessFigureUITests.m; sourceTree = "<group>"; };
 		CF3FCB881CB35ADB0056F6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3FCB941CB35BA40056F6F7 /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				CF3FCB6F1CB35ADB0056F6F7 /* LaunchScreen.storyboard */,
 				CF3FCB721CB35ADB0056F6F7 /* Info.plist */,
 				CF3FCB6A1CB35ADB0056F6F7 /* SuperGuessFigure.xcdatamodeld */,
+				CF3FCB941CB35BA40056F6F7 /* questions.plist */,
 				CF3FCB5E1CB35ADB0056F6F7 /* Supporting Files */,
 			);
 			path = SuperGuessFigure;
@@ -249,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3FCB951CB35BA40056F6F7 /* questions.plist in Resources */,
 				CF3FCB711CB35ADB0056F6F7 /* LaunchScreen.storyboard in Resources */,
 				CF3FCB6E1CB35ADB0056F6F7 /* Assets.xcassets in Resources */,
 				CF3FCB691CB35ADB0056F6F7 /* Main.storyboard in Resources */,
