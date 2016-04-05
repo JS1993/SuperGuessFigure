@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIView *answerView;
 @property (strong, nonatomic) IBOutlet UIView *chooseView;
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
+@property (strong, nonatomic) IBOutlet UIButton *scoreButton;
 @property(strong,nonatomic)NSArray* question;
 @property(strong,nonatomic)UIButton* button;
 /**
@@ -180,6 +181,7 @@
             [self performSelector:@selector(nextQuestion:) withObject:self.nextButton afterDelay:0.5];
             [self performSelector:@selector(changeChooseButtonHidden) withObject:nil afterDelay:0.5];
             [self setAnswerButtonColor:[UIColor blueColor]];
+            [self scoreButtonChange:800];
         }else{
             [self setAnswerButtonColor:[UIColor redColor]];
         }
@@ -217,6 +219,7 @@
     //清除按钮文字
     [button setTitle:@"" forState:UIControlStateNormal];
 }
+/**选择出选择区的按钮文字相同的按钮*/
 -(UIButton*)optionButtonWithTitle:(NSString*)title{
     for (UIButton* btn in self.chooseView.subviews) {
         if ([title isEqualToString:btn.currentTitle]&&btn.hidden) {
@@ -224,5 +227,27 @@
         }
     }
     return nil;
+}
+#pragma mark-分数的显示
+-(void)scoreButtonChange:(int)score{
+    int currentScore=[self.scoreButton.currentTitle intValue];
+    currentScore+=score;
+    [self.scoreButton setTitle:[NSString stringWithFormat:@"%d",currentScore] forState:UIControlStateNormal];
+}
+#pragma mark-提示按钮
+- (IBAction)tipAction:(UIButton *)sender {
+    [self scoreButtonChange:-1000];
+    Questions* question=self.question[self.index];
+    //1.先把答案区的按钮全部清空
+    for (UIButton* btn in self.answerView.subviews) {
+        [btn setTitle:@"" forState:UIControlStateNormal];
+    }
+    //2.找到第一个正确的按钮
+    NSString* first=[question.answer substringToIndex:1];
+    for (UIButton* btn in self.chooseView.subviews) {
+        if ([first isEqualToString:btn.currentTitle]) {
+            [self chooseButtonClick:btn];
+        }
+    }
 }
 @end

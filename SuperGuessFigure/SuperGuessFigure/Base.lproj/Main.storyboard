@@ -39,9 +39,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="提示" image="icon_tip" backgroundImage="btn_left"/>
                                 <state key="highlighted" image="icon_tip" backgroundImage="btn_left_highlighted"/>
+                                <connections>
+                                    <action selector="tipAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w26-SB-WYS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a0m-rm-RzY">
-                                <rect key="frame" x="262" y="221" width="58" height="36"/>
+                                <rect key="frame" x="262" y="215.5" width="58" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="下一题" backgroundImage="btn_right"/>
@@ -74,12 +77,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1KJ-6M-C1X">
-                                <rect key="frame" x="0.0" y="28" width="77" height="25.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="10000" image="coin"/>
-                            </button>
                             <view contentMode="scaleToFill" id="Slp-vA-vk2">
                                 <rect key="frame" x="0.0" y="286" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -90,6 +87,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1KJ-6M-C1X">
+                                <rect key="frame" x="0.0" y="25" width="77" height="25.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="10000" image="coin"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -100,6 +103,7 @@
                         <outlet property="iconButton" destination="LtU-Kf-q9N" id="pHy-oh-GfQ"/>
                         <outlet property="nextButton" destination="a0m-rm-RzY" id="wmR-x4-mKt"/>
                         <outlet property="numLabel" destination="dyI-zz-EcW" id="RWQ-Ji-XcT"/>
+                        <outlet property="scoreButton" destination="1KJ-6M-C1X" id="7iW-fa-aOc"/>
                         <outlet property="tipLabel" destination="Q9a-Nw-P6J" id="AwB-N4-JBN"/>
                     </connections>
                 </viewController>
