@@ -17,18 +17,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LtU-Kf-q9N">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="LtU-Kf-q9N">
                                 <rect key="frame" x="84" y="122" width="152" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
                                 <state key="normal" image="movie_jf" backgroundImage="center_img"/>
+                                <connections>
+                                    <action selector="Enlarge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJZ-PZ-hHH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ubE-76-FEz">
                                 <rect key="frame" x="0.0" y="221" width="54" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="帮助" image="icon_help" backgroundImage="btn_left"/>
-                                <state key="highlighted" image="btn_left_highlighted"/>
+                                <state key="highlighted" image="icon_help" backgroundImage="btn_left_highlighted"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CXL-aH-ueW">
                                 <rect key="frame" x="0.0" y="127" width="54" height="36"/>
@@ -68,7 +71,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1KJ-6M-C1X">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1KJ-6M-C1X">
                                 <rect key="frame" x="0.0" y="28" width="77" height="25.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
