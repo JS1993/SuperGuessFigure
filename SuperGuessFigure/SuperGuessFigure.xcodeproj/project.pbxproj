@@ -17,6 +17,8 @@
 		CF3FCB7C1CB35ADB0056F6F7 /* SuperGuessFigureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB7B1CB35ADB0056F6F7 /* SuperGuessFigureTests.m */; };
 		CF3FCB871CB35ADB0056F6F7 /* SuperGuessFigureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB861CB35ADB0056F6F7 /* SuperGuessFigureUITests.m */; };
 		CF3FCB951CB35BA40056F6F7 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF3FCB941CB35BA40056F6F7 /* questions.plist */; };
+		CF3FCB981CB375B80056F6F7 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB971CB375B80056F6F7 /* Questions.m */; };
+		CF3FCB9B1CB37BA50056F6F7 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FCB9A1CB37BA50056F6F7 /* NSArray+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		CF3FCB861CB35ADB0056F6F7 /* SuperGuessFigureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperGuessFigureUITests.m; sourceTree = "<group>"; };
 		CF3FCB881CB35ADB0056F6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF3FCB941CB35BA40056F6F7 /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		CF3FCB961CB375B80056F6F7 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
+		CF3FCB971CB375B80056F6F7 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
+		CF3FCB991CB37BA50056F6F7 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		CF3FCB9A1CB37BA50056F6F7 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 		CF3FCB5D1CB35ADB0056F6F7 /* SuperGuessFigure */ = {
 			isa = PBXGroup;
 			children = (
+				CF3FCB991CB37BA50056F6F7 /* NSArray+Log.h */,
+				CF3FCB9A1CB37BA50056F6F7 /* NSArray+Log.m */,
 				CF3FCB611CB35ADB0056F6F7 /* AppDelegate.h */,
 				CF3FCB621CB35ADB0056F6F7 /* AppDelegate.m */,
 				CF3FCB641CB35ADB0056F6F7 /* ViewController.h */,
@@ -116,6 +124,8 @@
 				CF3FCB6A1CB35ADB0056F6F7 /* SuperGuessFigure.xcdatamodeld */,
 				CF3FCB941CB35BA40056F6F7 /* questions.plist */,
 				CF3FCB5E1CB35ADB0056F6F7 /* Supporting Files */,
+				CF3FCB961CB375B80056F6F7 /* Questions.h */,
+				CF3FCB971CB375B80056F6F7 /* Questions.m */,
 			);
 			path = SuperGuessFigure;
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 			files = (
 				CF3FCB661CB35ADB0056F6F7 /* ViewController.m in Sources */,
 				CF3FCB6C1CB35ADB0056F6F7 /* SuperGuessFigure.xcdatamodeld in Sources */,
+				CF3FCB981CB375B80056F6F7 /* Questions.m in Sources */,
+				CF3FCB9B1CB37BA50056F6F7 /* NSArray+Log.m in Sources */,
 				CF3FCB631CB35ADB0056F6F7 /* AppDelegate.m in Sources */,
 				CF3FCB601CB35ADB0056F6F7 /* main.m in Sources */,
 			);
@@ -424,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SuperGuessFigure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.SuperGuessFigure;
@@ -435,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SuperGuessFigure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.SuperGuessFigure;
@@ -507,6 +521,7 @@
 				CF3FCB8D1CB35ADB0056F6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF3FCB8E1CB35ADB0056F6F7 /* Build configuration list for PBXNativeTarget "SuperGuessFigureTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +530,7 @@
 				CF3FCB901CB35ADB0056F6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF3FCB911CB35ADB0056F6F7 /* Build configuration list for PBXNativeTarget "SuperGuessFigureUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +539,7 @@
 				CF3FCB931CB35ADB0056F6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
